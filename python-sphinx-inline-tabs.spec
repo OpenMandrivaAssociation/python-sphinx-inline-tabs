@@ -11,6 +11,7 @@ Source0:         https://files.pythonhosted.org/packages/source/s/sphinx-inline-
 
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
+BuildRequires:  python3dist(sphinx)
 
 %description
 Add inline tabbed content to your Sphinx documentation.
