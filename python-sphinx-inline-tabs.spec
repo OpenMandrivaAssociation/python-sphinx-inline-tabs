@@ -7,7 +7,7 @@ Release:        1
 Summary:        Add inline tabbed content to your Sphinx documentation
 License:        MIT
 URL:            https://github.com/pradyunsg/sphinx-inline-tabs
-Source0:         https://files.pythonhosted.org/packages/source/s/sphinx-inline-tabs/sphinx-inline-tabs-%{version}.tar.gz
+Source0:         https://files.pythonhosted.org/packages/source/s/sphinx-inline-tabs/sphinx_inline_tabs-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
@@ -25,7 +25,7 @@ Features:
   synchronization.}
 
 %prep
-%autosetup -p1 -n sphinx-inline-tabs-%{version}
+%autosetup -p1 -n sphinx_inline_tabs-%{version}
 
 %build
 %py_build
