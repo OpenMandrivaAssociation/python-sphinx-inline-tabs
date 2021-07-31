@@ -37,3 +37,5 @@ Features:
 %doc README.md
 %doc CODE_OF_CONDUCT.md
 %license LICENSE
+%{python_sitelib}/sphinx_inline_tabs-%{version}-py*.*.egg-info
+%{python_sitelib}/sphinx_inline_tabs/
