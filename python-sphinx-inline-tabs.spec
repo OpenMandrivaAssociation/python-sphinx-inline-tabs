@@ -3,7 +3,7 @@ Name:           python-sphinx-inline-tabs
 # https://github.com/pradyunsg/sphinx-inline-tabs/issues/7
 Version:        2021.4.11b9
 %global tag     2021.04.11.beta9
-Release:        1
+Release:        2
 Summary:        Add inline tabbed content to your Sphinx documentation
 License:        MIT
 URL:            https://github.com/pradyunsg/sphinx-inline-tabs
