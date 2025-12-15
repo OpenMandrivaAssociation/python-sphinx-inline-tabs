@@ -1,6 +1,6 @@
 Name:           python-sphinx-inline-tabs
 Version:        2023.4.21
-Release:        1
+Release:        2
 Summary:        Add inline tabbed content to your Sphinx documentation
 License:        MIT
 URL:            https://github.com/pradyunsg/sphinx-inline-tabs
@@ -9,6 +9,9 @@ Source0:        https://files.pythonhosted.org/packages/source/s/sphinx-inline-t
 BuildArch:      noarch
 BuildSystem:	python
 BuildRequires:  python%{pyver}dist(sphinx)
+
+%patchlist
+https://github.com/pradyunsg/sphinx-inline-tabs/pull/51.patch
 
 %description
 Add inline tabbed content to your Sphinx documentation.
