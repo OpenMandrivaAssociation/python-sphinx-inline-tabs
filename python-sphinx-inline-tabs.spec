@@ -1,17 +1,21 @@
-Name:           python-sphinx-inline-tabs
-Version:        2023.4.21
-Release:        2
-Summary:        Add inline tabbed content to your Sphinx documentation
-License:        MIT
-URL:            https://github.com/pradyunsg/sphinx-inline-tabs
-Source0:        https://files.pythonhosted.org/packages/source/s/sphinx-inline-tabs/sphinx_inline_tabs-%{version}.tar.gz
+%define module sphinx-inline-tabs
+%define oname sphinx_inline_tabs
 
-BuildArch:      noarch
+Name:		python-sphinx-inline-tabs
+Version:	2025.12.21.14
+Release:	1
+Summary:	Add inline tabbed content to your Sphinx documentation
+License:	MIT
+Group:		Development/Python
+URL:		https://github.com/pradyunsg/sphinx-inline-tabs
+Source0:	https://files.pythonhosted.org/packages/source/s/%{module}/%{oname}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
 BuildSystem:	python
-BuildRequires:  python%{pyver}dist(sphinx)
-
-%patchlist
-https://github.com/pradyunsg/sphinx-inline-tabs/pull/51.patch
+BuildOption(prep):	-p1
+BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(flit-core)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 Add inline tabbed content to your Sphinx documentation.
@@ -27,6 +31,5 @@ Features:
 
 %files
 %doc README.md
-%license LICENSE
-%{python_sitelib}/sphinx_inline_tabs-%{version}.dist-info
-%{python_sitelib}/sphinx_inline_tabs/
+%{python_sitelib}/%{oname}
+%{python_sitelib}/%{oname}-%{version}.dist-info
