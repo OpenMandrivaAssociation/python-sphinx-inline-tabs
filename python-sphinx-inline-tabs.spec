@@ -3,7 +3,7 @@
 
 Name:		python-sphinx-inline-tabs
 Version:	2025.12.21.14
-Release:	1
+Release:	2
 Summary:	Add inline tabbed content to your Sphinx documentation
 License:	MIT
 Group:		Development/Python
